@@ -1,0 +1,14 @@
+[
+  {
+    "filename": "backtest-2026-04-01-2026-04-05.html",
+    "start_date": "2026-04-01",
+    "end_date": "2026-04-05",
+    "days": 4,
+    "final_assets": 9995350.0,
+    "realized_pnl": -4650.0,
+    "num_fills": 2,
+    "win_rate": 0.0,
+    "max_dd": 0.0005,
+    "generated_at": "2026-07-14T22:38:24.967519+00:00"
+  }
+]

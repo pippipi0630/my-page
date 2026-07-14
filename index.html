@@ -2,26 +2,32 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Backtest Reports</title>
 <style>
 body { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-       background: #111; color: #ddd; padding: 2rem; }
+       background: #111; color: #ddd; padding: 0.75rem; }
+h1 { font-size: 1.2rem; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; font-size: 0.8rem; white-space: nowrap; }
+th, td { padding: 6px 8px; text-align: left; border-bottom: 1px solid #333; }
+th { color: #aaa; font-weight: 600; }
 a { color: #636efa; text-decoration: none; }
 a:hover { text-decoration: underline; }
-li { margin: 0.3rem 0; }
+tr:hover { background: #1a1a2e; }
 </style>
 </head>
 <body>
 <h1>Backtest Reports</h1>
-<ul>
-      <li><a href="backtest-2026-04-01-2026-04-05.html">2026-04-01 → 2026-04-05</a></li>
-      <li><a href="backtest-2026-04-01-2026-04-15.html">2026-04-01 → 2026-04-15</a></li>
-      <li><a href="backtest-2026-04-01-2026-04-03.html">2026-04-01 → 2026-04-03</a></li>
-      <li><a href="backtest-2026-04-01-2026-04-10.html">2026-04-01 → 2026-04-10</a></li>
-      <li><a href="backtest-2026-04-01-2026-06-30.html">2026-04-01 → 2026-06-30</a></li>
-      <li><a href="backtest-2026-06-01-2026-06-05.html">2026-06-01 → 2026-06-05</a></li>
-      <li><a href="backtest-2025-01-06-2025-02-28.html">2025-01-06 → 2025-02-28</a></li>
-      <li><a href="backtest-2025-01-06-2025-03-31.html">2025-01-06 → 2025-03-31</a></li>
-</ul>
+<div class="table-wrap">
+<table>
+<thead><tr>
+<th>Start</th><th>Days</th><th>Final Assets</th><th>PnL</th><th>Win</th><th>MaxDD</th><th></th>
+</tr></thead>
+<tbody>
+<tr><td>2026-04-01</td><td>4</td><td style="text-align:right">¥9,995,350</td><td style="text-align:right">-4,650</td><td style="text-align:right">0.0%</td><td style="text-align:right">0.05%</td><td><a href="backtest-2026-04-01-2026-04-05.html">open</a></td></tr>
+</tbody>
+</table>
+</div>
 </body>
 </html>
