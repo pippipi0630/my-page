@@ -16,11 +16,11 @@
     "start_date": "2025-01-01",
     "end_date": "2025-12-31",
     "days": 364,
-    "final_assets": 9942611.94,
-    "realized_pnl": -57388.06,
-    "num_fills": 2,
+    "final_assets": 8793569.22,
+    "realized_pnl": -1855199.71,
+    "num_fills": 10,
     "win_rate": 0.0,
-    "max_dd": 0.008,
-    "generated_at": "2026-08-06T04:35:43.539235+00:00"
+    "max_dd": 0.2603,
+    "generated_at": "2026-08-06T08:45:12.771809+00:00"
   }
 ]
