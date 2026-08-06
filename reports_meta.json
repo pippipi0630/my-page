@@ -22,5 +22,17 @@
     "win_rate": 0.0,
     "max_dd": 0.2603,
     "generated_at": "2026-08-06T08:45:12.771809+00:00"
+  },
+  {
+    "filename": "backtest-2023-01-02-2025-12-31.html",
+    "start_date": "2023-01-02",
+    "end_date": "2025-12-31",
+    "days": 1094,
+    "final_assets": 21355141.63,
+    "realized_pnl": 9788612.36,
+    "num_fills": 10,
+    "win_rate": 1.0,
+    "max_dd": 0.5436,
+    "generated_at": "2026-08-06T09:59:48.070624+00:00"
   }
 ]
