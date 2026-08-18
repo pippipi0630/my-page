@@ -12,6 +12,30 @@
     "generated_at": "2026-08-05T22:41:20.037163+00:00"
   },
   {
+    "filename": "backtest-2025-05-01-2025-07-31.html",
+    "start_date": "2025-05-01",
+    "end_date": "2025-07-31",
+    "days": 91,
+    "final_assets": 10362314.31,
+    "realized_pnl": -157844.0,
+    "num_fills": 9,
+    "win_rate": 0.333,
+    "max_dd": 0.0509,
+    "generated_at": "2026-08-17T14:44:26.438039+00:00"
+  },
+  {
+    "filename": "backtest-2025-01-01-2025-06-30.html",
+    "start_date": "2025-01-01",
+    "end_date": "2025-06-30",
+    "days": 180,
+    "final_assets": 7575309.38,
+    "realized_pnl": -2409537.4,
+    "num_fills": 25,
+    "win_rate": 0.2,
+    "max_dd": 0.3287,
+    "generated_at": "2026-08-18T22:23:49.871668+00:00"
+  },
+  {
     "filename": "backtest-2025-01-01-2025-12-31.html",
     "start_date": "2025-01-01",
     "end_date": "2025-12-31",
@@ -28,11 +52,11 @@
     "start_date": "2023-01-02",
     "end_date": "2025-12-31",
     "days": 1094,
-    "final_assets": 21355141.63,
-    "realized_pnl": 9788612.36,
-    "num_fills": 10,
-    "win_rate": 1.0,
-    "max_dd": 0.5436,
-    "generated_at": "2026-08-06T09:59:48.070624+00:00"
+    "final_assets": 10531793.08,
+    "realized_pnl": 502341.77,
+    "num_fills": 136,
+    "win_rate": 0.451,
+    "max_dd": 0.3173,
+    "generated_at": "2026-08-11T02:22:54.010374+00:00"
   }
 ]
