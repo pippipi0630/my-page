@@ -5,29 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Backtest Reports</title>
 <style>
-body { font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-       background: #111; color: #ddd; padding: 0.75rem; }
-h1 { font-size: 1.2rem; }
-.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-table { border-collapse: collapse; width: 100%; font-size: 0.8rem; white-space: nowrap; }
-th, td { padding: 6px 8px; text-align: left; border-bottom: 1px solid #333; }
-th { color: #aaa; font-weight: 600; }
-a { color: #636efa; text-decoration: none; }
-a:hover { text-decoration: underline; }
-tr:hover { background: #1a1a2e; }
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #111; color: #ddd; margin: 0; padding: 0.75rem;
+  font-size: 16px; line-height: 1.5;
+}
+h1 { font-size: 1.1rem; color: #f2f5fa; margin: 0 0 1rem; }
+.index-card {
+  display: block;
+  background: #1a1a2e;
+  border: 1px solid #2a2a3e;
+  border-radius: 10px;
+  padding: 0.85rem;
+  margin-bottom: 0.6rem;
+  text-decoration: none;
+  color: inherit;
+}
+.index-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+.index-date { color: #888; font-size: 0.8rem; }
+.index-days { color: #636efa; font-size: 0.8rem; font-weight: 600; }
+.index-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.index-metric {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #111;
+  border-radius: 6px;
+  padding: 0.4rem;
+}
+.index-label { color: #888; font-size: 0.7rem; margin-bottom: 0.15rem; }
+.index-value { color: #f2f5fa; font-size: 0.95rem; font-weight: 700; }
+.positive { color: #00cc96; }
+.negative { color: #EF553B; }
+.empty { color: #666; font-size: 0.9rem; margin-top: 1rem; text-align: center; }
 </style>
 </head>
 <body>
 <h1>Backtest Reports</h1>
-<div class="table-wrap">
-<table>
-<thead><tr>
-<th>Time</th><th>Days</th><th>Final Assets</th><th>PnL</th><th>Win</th><th>MaxDD</th><th></th>
-</tr></thead>
-<tbody>
-<tr><td>08/06 07:41</td><td>4</td><td style="text-align:right">¥9,995,350</td><td style="text-align:right">-4,650</td><td style="text-align:right">0.0%</td><td style="text-align:right">0.05%</td><td><a href="backtest-2026-04-01-2026-04-05.html">open</a></td></tr><tr><td>08/17 23:44</td><td>91</td><td style="text-align:right">¥10,362,314</td><td style="text-align:right">-157,844</td><td style="text-align:right">33.3%</td><td style="text-align:right">5.09%</td><td><a href="backtest-2025-05-01-2025-07-31.html">open</a></td></tr><tr><td>08/19 19:31</td><td>89</td><td style="text-align:right">¥9,714,510</td><td style="text-align:right">-285,490</td><td style="text-align:right">0.0%</td><td style="text-align:right">2.85%</td><td><a href="backtest-2025-01-01-2025-03-31.html">open</a></td></tr><tr><td>08/19 07:23</td><td>180</td><td style="text-align:right">¥7,575,309</td><td style="text-align:right">-2,409,537</td><td style="text-align:right">20.0%</td><td style="text-align:right">32.87%</td><td><a href="backtest-2025-01-01-2025-06-30.html">open</a></td></tr><tr><td>08/06 17:45</td><td>364</td><td style="text-align:right">¥8,793,569</td><td style="text-align:right">-1,855,200</td><td style="text-align:right">0.0%</td><td style="text-align:right">26.03%</td><td><a href="backtest-2025-01-01-2025-12-31.html">open</a></td></tr><tr><td>08/11 11:22</td><td>1094</td><td style="text-align:right">¥10,531,793</td><td style="text-align:right">502,342</td><td style="text-align:right">45.1%</td><td style="text-align:right">31.73%</td><td><a href="backtest-2023-01-02-2025-12-31.html">open</a></td></tr>
-</tbody>
-</table>
-</div>
+<a class="index-card" href="backtest-2026-04-01-2026-04-05.html"><div class="index-header"><span class="index-date">08/06 07:41</span><span class="index-days">4 days</span></div><div class="index-grid"><div class="index-metric"><span class="index-label">Final</span><span class="index-value">¥9,995,350</span></div><div class="index-metric"><span class="index-label">PnL</span><span class="index-value negative">-4,650</span></div><div class="index-metric"><span class="index-label">Win</span><span class="index-value">0.0%</span></div><div class="index-metric"><span class="index-label">MaxDD</span><span class="index-value">0.05%</span></div></div></a><a class="index-card" href="backtest-2025-05-01-2025-07-31.html"><div class="index-header"><span class="index-date">08/17 23:44</span><span class="index-days">91 days</span></div><div class="index-grid"><div class="index-metric"><span class="index-label">Final</span><span class="index-value">¥10,362,314</span></div><div class="index-metric"><span class="index-label">PnL</span><span class="index-value negative">-157,844</span></div><div class="index-metric"><span class="index-label">Win</span><span class="index-value">33.3%</span></div><div class="index-metric"><span class="index-label">MaxDD</span><span class="index-value">5.09%</span></div></div></a><a class="index-card" href="backtest-2025-01-01-2025-01-31.html"><div class="index-header"><span class="index-date">08/23 22:59</span><span class="index-days">30 days</span></div><div class="index-grid"><div class="index-metric"><span class="index-label">Final</span><span class="index-value">¥9,680,384</span></div><div class="index-metric"><span class="index-label">PnL</span><span class="index-value negative">-319,616</span></div><div class="index-metric"><span class="index-label">Win</span><span class="index-value">0.0%</span></div><div class="index-metric"><span class="index-label">MaxDD</span><span class="index-value">3.20%</span></div></div></a><a class="index-card" href="backtest-2025-01-01-2025-03-31.html"><div class="index-header"><span class="index-date">08/19 19:31</span><span class="index-days">89 days</span></div><div class="index-grid"><div class="index-metric"><span class="index-label">Final</span><span class="index-value">¥9,714,510</span></div><div class="index-metric"><span class="index-label">PnL</span><span class="index-value negative">-285,490</span></div><div class="index-metric"><span class="index-label">Win</span><span class="index-value">0.0%</span></div><div class="index-metric"><span class="index-label">MaxDD</span><span class="index-value">2.85%</span></div></div></a><a class="index-card" href="backtest-2025-01-01-2025-06-30.html"><div class="index-header"><span class="index-date">08/19 07:23</span><span class="index-days">180 days</span></div><div class="index-grid"><div class="index-metric"><span class="index-label">Final</span><span class="index-value">¥7,575,309</span></div><div class="index-metric"><span class="index-label">PnL</span><span class="index-value negative">-2,409,537</span></div><div class="index-metric"><span class="index-label">Win</span><span class="index-value">20.0%</span></div><div class="index-metric"><span class="index-label">MaxDD</span><span class="index-value">32.87%</span></div></div></a><a class="index-card" href="backtest-2025-01-01-2025-12-31.html"><div class="index-header"><span class="index-date">08/06 17:45</span><span class="index-days">364 days</span></div><div class="index-grid"><div class="index-metric"><span class="index-label">Final</span><span class="index-value">¥8,793,569</span></div><div class="index-metric"><span class="index-label">PnL</span><span class="index-value negative">-1,855,200</span></div><div class="index-metric"><span class="index-label">Win</span><span class="index-value">0.0%</span></div><div class="index-metric"><span class="index-label">MaxDD</span><span class="index-value">26.03%</span></div></div></a><a class="index-card" href="backtest-2023-01-02-2025-12-31.html"><div class="index-header"><span class="index-date">08/11 11:22</span><span class="index-days">1094 days</span></div><div class="index-grid"><div class="index-metric"><span class="index-label">Final</span><span class="index-value">¥10,531,793</span></div><div class="index-metric"><span class="index-label">PnL</span><span class="index-value positive">+502,342</span></div><div class="index-metric"><span class="index-label">Win</span><span class="index-value">45.1%</span></div><div class="index-metric"><span class="index-label">MaxDD</span><span class="index-value">31.73%</span></div></div></a>
 </body>
 </html>
