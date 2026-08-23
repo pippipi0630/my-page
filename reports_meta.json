@@ -28,12 +28,12 @@
     "start_date": "2025-01-01",
     "end_date": "2025-01-31",
     "days": 30,
-    "final_assets": 9680384.33,
-    "realized_pnl": -319615.67,
+    "final_assets": 9680384.2,
+    "realized_pnl": -319615.8,
     "num_fills": 4,
     "win_rate": 0.0,
     "max_dd": 0.032,
-    "generated_at": "2026-08-23T13:59:31.305961+00:00"
+    "generated_at": "2026-08-23T22:15:26.382980+00:00"
   },
   {
     "filename": "backtest-2025-01-01-2025-03-31.html",
