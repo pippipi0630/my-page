@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6857 pass-20261106-001 - Investment Logger</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333; }
+    header { background: #1a1a2e; color: #fff; padding: 1rem 2rem; }
+    header h1 { margin: 0; font-size: 1.25rem; }
+    nav { margin-top: 0.5rem; }
+    nav a { color: #eee; margin-right: 1rem; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+    .card { background: #fff; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .card h2 { margin-top: 0; font-size: 1.1rem; }
+    .meta { color: #666; font-size: 0.9rem; }
+    .pnl-positive { color: #2e7d32; }
+    .pnl-negative { color: #c62828; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 0.75rem 0.5rem; border-bottom: 1px solid #eee; }
+    th { color: #666; font-weight: 600; }
+    img { max-width: 100%; border: 1px solid #ddd; border-radius: 4px; }
+    .notes { list-style: none; padding: 0; }
+    .context-note { padding: 0.5rem 0; border-bottom: 1px solid #eee; }
+    .note-label { display: inline-block; padding: 0.1rem 0.5rem; border-radius: 4px; font-size: 0.75rem; color: #fff; margin-right: 0.5rem; }
+    .note-memory { background: #5c6bc0; }
+    .note-research { background: #26a69a; }
+    .note-verification { background: #8d6e63; }
+    .note-correction { background: #ef6c00; }
+    .note-time { color: #666; font-size: 0.8rem; margin-right: 0.5rem; }
+    .note-source { display: block; color: #666; font-size: 0.8rem; }
+    .note-superseded { color: #999; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Investment Logger</h1>
+    <nav>
+      <a href="../index.html">取引一覧</a>
+      <a href="../passes.html">見送り</a>
+      <a href="../rules.html">ルール</a>
+    </nav>
+  </header>
+  <main>
+    
+<div class="card">
+  <h2>6857 - pass-20261106-001</h2>
+  <p class="meta">検討日時: 2026-11-06 00:15:00+00:00 | 想定価格: 24700.0</p>
+  <p>見送り理由: 日足・15分足とも SMA 5/25/75/200 が逆並びで 200 の傾きも下向き、上昇トレンドの崩れは明白だった。ただ 24,000 台のサポート（6/11 安値 24,150・7/29 安値 24,135）と、前日比 -13.6% ギャップから +13.6% 反発した底値大陽線を見て、一時リバウンドを取りたい欲が出た。結局トレンド崩れを優先して見送った。</p>
+</div>
+
+
+<div class="card">
+  <h3>取材メモ</h3>
+  
+  
+  
+  <ul class="notes">
+    
+    
+      
+    
+    <li class="context-note">
+      <span class="note-label note-verification">裏取り</span>
+      <span class="note-time">2026-11-06 00:15:00+00:00</span>
+      裏取り: 6/11 安値 24,150 / 7/29 安値 24,135 / 11/06 安値 24,655。24,000 台のサポートは実在し、15 円差で揃っている。11/06 は前日終値 29,485 から O 25,485（-13.6% ギャップ）、L 24,655 → C 28,015（+13.6% 反発）、実体 +2,530、出来高 3,694 万株（前日比 1.56 倍）の底値大陽線。一方で日足 SMA 5=32,540 / 25=35,957 / 75=33,691 / 200=29,202 は完全逆並び、終値は 200 線すら下回る。15分足 09:15 は SMA200 の傾き -26.5、乖離 -23.19%。『欲が出た』根拠と『見送った』根拠はどちらも実データに存在する。
+      <span class="note-source">出典: JQuants:6857:daily/2026-06-01..2026-11-10, yfinance:6857.T:15m/2026-11-06</span>
+    </li>
+    
+    
+      
+    
+    <li class="context-note">
+      <span class="note-label note-verification">裏取り</span>
+      <span class="note-time">2026-11-12 06:00:00+00:00</span>
+      後知恵（11/12 時点。見送り判断の評価ではない）: 11/09 終値 28,375 → 11/10 29,690 → 11/11 31,440（+5.89%、日経を約 377 円押し上げる主役）。11/06 安値 24,655 から +27.5%。11/12 は 29,985（-4.63%）。事実だけを as_of を分けて残し、『やめて正解だったか』は判定しない。
+      <span class="note-source">出典: JQuants:6857:daily, 株探 2026-11-11 日経平均寄与度, Yahoo!ファイナンス 6857.T 時系列</span>
+    </li>
+    
+  </ul>
+</div>
+
+
+  </main>
+</body>
+</html>
